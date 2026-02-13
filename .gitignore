@@ -1,0 +1,20 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Arquivo de variáveis de ambiente
+.env
+
+# Arquivos compilados do Python
+__pycache__/
+*.pyc
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Pastas do Streamlit (opcional)
+.streamlit/secrets.toml
+
+# Logs
+*.log
