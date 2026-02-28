@@ -2,7 +2,7 @@
 
 ![alt text](/imagens/app_chat_ia_generativa.png)
 
-Antes de começar a programar acesse o arquivo [configuração de ambiente](#configuração-da-página).
+Antes de começar a programar acesse o arquivo [configuração de ambiente](configuracao_ambiente.md).
 
 ## Configuração Arquivo `app.py`
 
