@@ -12,7 +12,7 @@ AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")
 MODEL_DEPLOYMENT = os.getenv("MODEL_DEPLOYMENT", "modelo-chat-barrado")
 API_VERSION = "2024-12-01-preview"  # Versão da sua imagem
 
-# Inicializa cliente do OpenAI com CHAVE DE API
+# Inicializa cliente do OpenAI com CHAVE DE  API
 @st.cache_resource
 def get_openai_client():
     """

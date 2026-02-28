@@ -249,49 +249,6 @@ Nosso projeto utilizará:
 
 ![alt text](/imagens/conta_azure_vs.png)
 
-# Estrutura do Projeto
-
-```text
-chat-ai-app/
-├── app.py              # App Streamlit
-├── .env               # Configurações
-├── requirements.txt   # Dependências
-└── README.md
-```
-1. Crie um novo projeto no VS Code como o nome: `chat-ai-app`
-2. Crie um arquivo `requirements.txt`
-    * Adicione as versões:
-
-```text
-streamlit==1.38.0
-azure-identity==1.19.0
-azure-ai-projects==1.0.0b1
-openai==1.51.2
-python-dotenv==1.0.1
-```
-
-| Pacote          | Versão        | Função no Seu App       |
-| -------------- | ------------- | ---------------- |
-| streamlit==1.38.0          | Interface web | Cria o chat UI com st.chat_input(), st.chat_message() |
-| azure-identity==1.19.0     | Autenticação  | DefaultAzureCredential() para login Azure AD          |
-| azure-ai-projects==1.0.0b1 | Core IA       | AIProjectClient(endpoint=...) conecta ao Foundry      |
-| openai==1.51.2             | Inferência    | client.chat.completions.create(model="gpt-4o")        |
-| python-dotenv==1.0.1       | Config        | Carrega PROJECT_ENDPOINT e MODEL_DEPLOYMENT do .env   |
-
-3. Crie um arquivo `.env`
-```text
-PROJECT_ENDPOINT=https://seu-projeto.projects.ai.azure.com
-MODEL_DEPLOYMENT=gpt-4o
-```
-* Configure com os valores do projeto criado no Microsoft Foundry
-
-4. Crie um arquivo `app.py`
-5. Execute no VS Code
-    * Abra o Terminal no VS Code
-    * Crie um ambiente virtual: `python -m venv .venv`
-    * Ative: `.venv\Scripts\activate` (Windows) ou source `.venv/bin/activate` (Linux/Mac)
-    * Instale dependências: `pip install -r requirements.txt`
-    * Execute: `streamlit run app.py`
 
 # Referência
 
